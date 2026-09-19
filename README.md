@@ -1,76 +1,125 @@
 # Credit Score Classification
 
-This project analyzes customer financial and behavioral data to classify credit scores as Good, Standard, or Bad. It follows a data science workflow including exploratory data analysis, feature engineering, preprocessing, model training, and evaluation.
+A machine learning project focused on predicting credit score categories using financial and behavioral customer data. This repository explores how features such as income, debt, payment behavior, and credit utilization influence creditworthiness.
 
-## Project overview
+## Overview
 
-The notebook in this repository explores a credit dataset and demonstrates:
+The goal of this project is to build a classification model that predicts whether a customer's credit score is:
+- Good
+- Standard
+- Bad
 
-- Data loading and inspection
-- Missing value handling
-- Categorical feature encoding
-- Model training for credit score prediction
-- Evaluation using classification metrics
-- Visual inspection of feature relationships
+The project follows a standard data science workflow:
+- Data loading and exploration
+- Handling missing values
+- Feature engineering and preprocessing
+- Encoding categorical variables
+- Model training
+- Performance evaluation
 
-## Files in this repository
+## Project Objectives
 
-- `Credit_score_classification_Project.ipynb` — complete Jupyter notebook with the workflow
-- `README.md` — project description and setup guide
+- Analyze credit-related customer data
+- Identify patterns and risk indicators
+- Build a reliable classification model
+- Evaluate model performance using standard metrics
+- Improve understanding of factors influencing credit score
 
-## Environment setup
+## Dataset
 
-Create a virtual environment and install the dependencies:
+This project uses a credit score dataset containing financial and demographic information, including:
+- Annual income
+- Monthly in-hand salary
+- Number of bank accounts
+- Number of credit cards
+- Outstanding debt
+- Credit utilization ratio
+- Payment behavior
+- Loan history
+- Credit score label
 
+## Repository Contents
+
+- `Credit_score_classification_Project.ipynb` — Jupyter notebook containing the full workflow
+- `README.md` — project overview and setup instructions
+- `requirements.txt` — Python dependencies
+
+## Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+## Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/deepak3192hp/Credit-Score-Classification.git
+cd Credit-Score-Classification
+```
+
+2. Create a virtual environment:
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+source .venv/bin/activate
+```
+
+3. Install dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
-## Run the notebook
-
-Open the notebook with Jupyter:
-
+4. Launch Jupyter Notebook:
 ```bash
 jupyter notebook
 ```
 
-Then open `Credit_score_classification_Project.ipynb` and run the cells in order.
+5. Open `Credit_score_classification_Project.ipynb` and run the cells sequentially.
 
-## Notes
+## Usage Notes
 
-The notebook originally uses a Google Drive file path:
+The notebook originally reads the dataset from a Google Drive path:
 
 ```python
 pd.read_csv('/content/drive/My Drive/Colab Notebooks/Credit_Score_Classification_Train.csv')
 ```
 
-For local execution, replace this with the path to your dataset CSV file, for example:
+For local execution, replace it with your dataset path, for example:
 
 ```python
 dataset = pd.read_csv('data/Credit_Score_Classification_Train.csv')
 ```
 
-## Typical workflow inside the project
+## Model Workflow
 
-1. Load the credit dataset
-2. Inspect the data shape and columns
-3. Check missing values and data types
-4. Encode categorical variables
-5. Train a classification model
-6. Evaluate model performance and interpret results
+The notebook includes:
+- Data inspection and summary statistics
+- Missing value analysis
+- Categorical encoding
+- Data preprocessing
+- Training a machine learning classifier
+- Evaluation using metrics such as:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - ROC-AUC
 
-## Dependencies
+## Project Highlights
 
-The project uses common Python data science libraries, including:
-
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
+- Focus on credit-risk assessment
+- End-to-end machine learning pipeline
+- Practical data preprocessing techniques
+- Clear exploratory analysis
 
 ## License
 
-This repository is intended for educational and personal project use.
+This project is intended for educational and personal project use.
+
+## Author
+
+Deepak Sharma
