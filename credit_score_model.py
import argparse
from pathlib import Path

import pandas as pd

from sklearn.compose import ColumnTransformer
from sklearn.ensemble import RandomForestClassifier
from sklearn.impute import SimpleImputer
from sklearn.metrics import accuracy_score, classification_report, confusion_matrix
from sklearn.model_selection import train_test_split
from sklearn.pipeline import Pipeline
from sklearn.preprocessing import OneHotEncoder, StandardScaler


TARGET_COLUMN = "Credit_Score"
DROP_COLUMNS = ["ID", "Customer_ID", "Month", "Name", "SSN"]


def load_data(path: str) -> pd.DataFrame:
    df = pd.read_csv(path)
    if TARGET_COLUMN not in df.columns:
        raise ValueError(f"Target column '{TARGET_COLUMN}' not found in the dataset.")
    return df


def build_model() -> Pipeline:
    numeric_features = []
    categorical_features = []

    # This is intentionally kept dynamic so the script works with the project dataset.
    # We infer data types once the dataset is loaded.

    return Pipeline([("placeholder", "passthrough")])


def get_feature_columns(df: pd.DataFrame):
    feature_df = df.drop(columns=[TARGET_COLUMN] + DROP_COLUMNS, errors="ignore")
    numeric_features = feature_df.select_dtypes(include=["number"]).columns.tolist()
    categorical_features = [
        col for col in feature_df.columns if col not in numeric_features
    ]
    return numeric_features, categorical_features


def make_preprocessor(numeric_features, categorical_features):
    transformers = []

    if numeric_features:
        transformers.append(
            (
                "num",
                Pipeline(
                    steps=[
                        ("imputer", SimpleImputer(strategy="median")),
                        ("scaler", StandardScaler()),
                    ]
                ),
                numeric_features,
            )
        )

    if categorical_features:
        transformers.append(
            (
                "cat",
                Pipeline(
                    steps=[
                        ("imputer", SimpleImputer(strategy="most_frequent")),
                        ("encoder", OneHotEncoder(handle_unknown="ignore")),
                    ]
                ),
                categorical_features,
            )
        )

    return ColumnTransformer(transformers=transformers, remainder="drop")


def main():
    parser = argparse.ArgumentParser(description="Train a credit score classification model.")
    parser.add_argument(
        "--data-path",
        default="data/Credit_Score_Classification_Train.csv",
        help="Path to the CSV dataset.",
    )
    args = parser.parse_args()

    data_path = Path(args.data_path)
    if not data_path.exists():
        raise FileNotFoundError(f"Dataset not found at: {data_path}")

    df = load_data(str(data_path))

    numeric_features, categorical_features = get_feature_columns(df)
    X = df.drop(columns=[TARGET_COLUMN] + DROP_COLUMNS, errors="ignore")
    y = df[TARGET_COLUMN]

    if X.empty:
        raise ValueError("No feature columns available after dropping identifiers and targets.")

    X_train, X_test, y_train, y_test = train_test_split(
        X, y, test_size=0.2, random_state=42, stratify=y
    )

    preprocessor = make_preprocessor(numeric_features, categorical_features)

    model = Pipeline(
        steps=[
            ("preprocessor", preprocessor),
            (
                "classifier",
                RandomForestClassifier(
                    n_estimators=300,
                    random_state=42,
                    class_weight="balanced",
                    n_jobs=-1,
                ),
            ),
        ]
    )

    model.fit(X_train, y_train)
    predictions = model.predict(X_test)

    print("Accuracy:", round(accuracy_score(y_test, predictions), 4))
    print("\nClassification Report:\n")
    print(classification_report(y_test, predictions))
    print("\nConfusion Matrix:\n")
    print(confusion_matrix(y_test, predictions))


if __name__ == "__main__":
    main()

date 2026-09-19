@@ -1,0 +1,130 @@
+# Credit Score Classification
+
+A machine learning project focused on predicting credit score categories using financial and behavioral customer data. This repository explores how features such as income, debt, payment behavior, and credit utilization influence creditworthiness.
+
+## Overview
+
+The goal of this project is to build a classification model that predicts whether a customer's credit score is:
+- Good
+- Standard
+- Bad
+
+The project follows a standard data science workflow:
+- Data loading and exploration
+- Handling missing values
+- Feature engineering and preprocessing
+- Encoding categorical variables
+- Model training
+- Performance evaluation
+
+## Project Objectives
+
+- Analyze credit-related customer data
+- Identify patterns and risk indicators
+- Build a reliable classification model
+- Evaluate model performance using standard metrics
+- Improve understanding of factors influencing credit score
+
+## Dataset
+
+This project uses a credit score dataset containing financial and demographic information, including:
+- Annual income
+- Monthly in-hand salary
+- Number of bank accounts
+- Number of credit cards
+- Outstanding debt
+- Credit utilization ratio
+- Payment behavior
+- Loan history
+- Credit score label
+
+## Repository Contents
+
+- `Credit_score_classification_Project.ipynb` — Jupyter notebook containing the full workflow
+- `credit_score_model.py` — clean Python training pipeline for reproducible model execution
+- `README.md` — project overview and setup instructions
+- `requirements.txt` — Python dependencies
+
+## Tech Stack
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Jupyter Notebook
+
+## Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/deepak3192hp/Credit-Score-Classification.git
+cd Credit-Score-Classification
+```
+
+2. Create a virtual environment:
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+4. Run the training script:
+```bash
+python credit_score_model.py --data-path data/Credit_Score_Classification_Train.csv
+```
+
+5. Optional: open the Jupyter notebook to explore the analysis interactively:
+```bash
+jupyter notebook
+```
+
+## Usage Notes
+
+The notebook originally reads the dataset from a Google Drive path:
+
+```python
+pd.read_csv('/content/drive/My Drive/Colab Notebooks/Credit_Score_Classification_Train.csv')
+```
+
+For local execution, replace it with your dataset path, for example:
+
+```python
+dataset = pd.read_csv('data/Credit_Score_Classification_Train.csv')
+```
+
+## Model Workflow
+
+The notebook includes:
+- Data inspection and summary statistics
+- Missing value analysis
+- Categorical encoding
+- Data preprocessing
+- Training a machine learning classifier
+- Evaluation using metrics such as:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-score
+  - ROC-AUC
+
+## Project Highlights
+
+- Focus on credit-risk assessment
+- End-to-end machine learning pipeline
+- Practical data preprocessing techniques
+- Clear exploratory analysis
+- Reproducible Python training script
+
+## License
+
+This project is intended for educational and personal project use.
+
+## Author
+
+Deepak Sharma
